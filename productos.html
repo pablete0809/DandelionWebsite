@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Dandelion Bakery</title>
+    <script src="./js/libCapas2021.js"></script>
+    <script src="./js/carrito.js"></script>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/ico" href="./fotos/galleta.png" sizes="64x64">
+    <!--Fuente sacada de https://fonts.google.com/specimen/Montserrat?preview.text_type=custom-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--CDN para Font Awesome con el que pongo iconos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="CargarInicio()"> 
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">    
+            <div class="logo">
+                <a href="inicio.html" onclick="Cargar('inicio.html','cuerpo')">
+                    <img src="./fotos/logo.png" width="200" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul id="menu-items">
+                    <li><a href="empresa.html" onclick="Cargar('empresa.html','cuerpo')">Empresa</a></li>
+                    <li><a href="contacto.html" onclick="Cargar('contacto.html','cuerpo')" >Contacto</a></li>
+                    <li><a href="productos.html" onclick="Cargar('productos.html','cuerpo')" >Productos</a></li>
+                     <li><a href="login.html" onclick="Cargar('login.html','cuerpo')" >Usuario</a></li>
+                    <li><a href="login.html" onclick="Cargar('login.html','cuerpo')" >Administración</a></li>
+                </ul>
+            </nav>
+            <a class="numCarrito" href="carrito.html" onclick="Cargar('carrito.html','cuerpo')">
+                <img src="./fotos/carrito.png" width="30" height="30" alt="Carrito">
+                <span class="numCarrito_span" id="num_Carrito" value="0"> 0 </span>
+            </a>
+            <img src="./fotos/menu.png" alt="hamburguesa-menu" class="icono-menu" onclick="abrirmenu()">
+        </div>
+    </div>
+</div>
+<div class="container-peque">
+    <div class="row row-2">
+        <h2>Productos</h2>
+        <select>
+            <option>Ordenar por defecto</option>
+            <option>Ordenar por Tipo</option>
+            <option>Ordenar por popularidad</option>
+            <option>Ordenar por clasificación</option>
+            <option>Ordenar por ventas</option>
+        </select>
+    </div>
+    
+    <div class="row">
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+    </div>
+        
+
+    <div class="row">
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="precio">2.5$</div>
+            
+            <a onclick='anyadirCarrito("<%=codigo%>","<%=descripcion%>","<%=precio%>","<%=imagen%>")' class="btn btn-ac">Añadir al carrito</a>
+           
+        </div>
+    </div>
+        
+        
+   
+    
+    <div class="btn-paginas">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>&#8594;</span>
+    </div>
+</div>
+</div>
+
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Siguenos en Instagram</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi harum dolore quibusdam dolor expedita hic!</p>
+                <div class="inst-logo">
+                   <!--Img si quieres con .inst-logo-->
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./fotos/logo.png" alt="">
+                <p>Nuestro objetivo es hacer para vosotros las mejores tartas y alimentos aretesanales posibles.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usfull Links</h3>
+                <ul>
+                    <li>Cupones</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Pablo García </p>
+    </div>
+</div>
+
+<!--Js para el menu interactivo-->
+<script>
+    //selecionamos la lista de items
+    var menuitems = document.getElementById("menu-items");
+    menuitems.style.maxHeight = "0px";
+
+    //creamos la funcion que se llama cuando hacemos click al boton de menu
+    function abrirmenu(){
+        if(menuitems.style.maxHeight == "0px"){
+            menuitems.style.maxHeight = "200px";
+        }else{
+            menuitems.style.maxHeight ="0px";
+        }
+
+    }
+</script>
+</body>
+</html>

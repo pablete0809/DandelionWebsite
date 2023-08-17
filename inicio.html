@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandelion Bakery</title>
+    <script src="./js/libCapas2021.js"></script>
+    <script src="./js/carrito.js"></script>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/ico" href="./fotos/galleta.png" sizes="64x64">
+    <!--Fuente sacada de https://fonts.google.com/specimen/Montserrat?preview.text_type=custom-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--CDN para Font Awesome con el que pongo iconos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+<div class="header">
+    <div class="container">
+        <div class="navbar">    
+            <div class="logo">
+                <a href="inicio.html" onclick="Cargar('inicio.html','cuerpo')">
+                    <img src="./fotos/logo.png" width="200" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul id="menu-items">
+                    <li><a href="empresa.html" onclick="Cargar('empresa.html','cuerpo')">Empresa</a></li>
+                    <li><a href="contacto.html" onclick="Cargar('contacto.html','cuerpo')" >Contacto</a></li>
+                    <li><a href="productos.html" onclick="Cargar('productos.html','cuerpo')" >Productos</a></li>
+                     <li><a href="login.html" onclick="Cargar('login.html','cuerpo')" >Usuario</a></li>
+                    <li><a href="login.html" onclick="Cargar('login.html','cuerpo')" >Administración</a></li>
+                </ul>
+            </nav>
+            <a class="numCarrito" href="carrito.html" onclick="Cargar('carrito.html','cuerpo')">
+                <img src="./fotos/carrito.png" width="30" height="30" alt="Carrito">
+                <span class="numCarrito_span" id="num_Carrito" value="0"> 0 </span>
+            </a>
+            <img src="./fotos/menu.png" alt="hamburguesa-menu" class="icono-menu" onclick="abrirmenu()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Lorem, ipsum dolor. <br> lorem impsum!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos?<br></p>
+                <!--He cogido la flecha de https://www.toptal.com/designers/htmlarrows/symbols/ -->
+                <a href="productos.html" onclick="Cargar('productos.html','cuerpo')" class="btn" >Explora &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="./fotos/Fondo-Inicio.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Expositor de categorias-->
+<div class="categories">
+    <div class="container-peque">
+        <div class="row">
+            <div class="col-3">
+                <img alt="producto" src="./fotos/Productos/brownie.jpg">
+            </div>
+            <div class="col-3">
+                <img alt="producto" src="./fotos/Productos/tarta.jpg">
+            </div>
+            <div class="col-3">
+                <img alt="producto" src="./fotos/Productos/mince_pies.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Productos Destacados-->
+<div class="container-peque">
+    <h2 class="title">Nuestros Favoritos</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$2.50</p>
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/brownie.jpg" alt="">
+            <h4>Brownie</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$2.50</p>
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/tarta_limon.jpg" alt="">
+            <h4>Lime Cake</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$2.50</p>
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$2.50</p>
+        </div>
+    </div>
+</div>
+<!--Oferta-->
+<div class="oferta">
+    <div class="container-peque">
+        <div class="row">
+            <div class="col-2">
+                <img class="oferta-img" alt="oferta" src="./fotos/Fondo-Inicio.png" >
+            </div>
+            <div class="col-2">
+                <p>Exclusive Available on Dandelion</p>
+                <h1>Beautifull Cake</h1>
+                <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus obcaecati ab iusto! Quas sit quidem, molestiae adipisci ratione non placeat qui incidunt aliquid necessitatibus excepturi saepe quia nemo hic aut rerum sint sequi optio corrupti quibusdam reiciendis magni ex laborum? Velit soluta quas mollitia itaque sint? Minima eligendi et a animi dicta! Quidem porro nesciunt</small>
+                <a href="productos.html" onclick="Cargar('productos.html','cuerpo')" class="btn" >Pruebalo&#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container-peque">
+    <!--Novedades-->
+    <h2 class="title">Novedades</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>$2.50</p>
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/brownie.jpg" alt="">
+            <h4>Brownie</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$2.50</p>
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/tarta_limon.jpg" alt="">
+            <h4>Lime Cake</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$2.50</p>
+        </div>
+        <div class="col-4">
+            <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+            <h4>Cinnamon Roll</h4>
+            <div class="rating">
+                <!--Sacado de font awesome-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$2.50</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+                <h4>Cinnamon Roll</h4>
+                <div class="rating">
+                    <!--Sacado de font awesome-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$2.50</p>
+            </div>
+            <div class="col-4">
+                <img src="./fotos/Productos/brownie.jpg" alt="">
+                <h4>Brownie</h4>
+                <div class="rating">
+                    <!--Sacado de font awesome-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2.50</p>
+            </div>
+            <div class="col-4">
+                <img src="./fotos/Productos/tarta_limon.jpg" alt="">
+                <h4>Lime Cake</h4>
+                <div class="rating">
+                    <!--Sacado de font awesome-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2.50</p>
+            </div>
+            <div class="col-4">
+                <img src="./fotos/Productos/Cinnamon_roll.jpg" alt="">
+                <h4>Cinnamon Roll</h4>
+                <div class="rating">
+                    <!--Sacado de font awesome-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2.50</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Siguenos en Instagram</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi harum dolore quibusdam dolor expedita hic!</p>
+                <div class="inst-logo">
+                   <!--Img si quieres con .inst-logo-->
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="./fotos/logo.png" alt="">
+                <p>Nuestro objetivo es hacer para vosotros las mejores tartas y alimentos aretesanales posibles.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usfull Links</h3>
+                <ul>
+                    <li>Cupones</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Pablo García </p>
+    </div>
+    
+</div>
+
+<!--Js para el menu interactivo-->
+<script>
+    //selecionamos la lista de items
+    var menuitems = document.getElementById("menu-items");
+    menuitems.style.maxHeight = "0px";
+
+    //creamos la funcion que se llama cuando hacemos click al boton de menu
+    function abrirmenu(){
+        if(menuitems.style.maxHeight == "0px"){
+            menuitems.style.maxHeight = "200px";
+        }else{
+            menuitems.style.maxHeight ="0px";
+        }
+
+    }
+</script>
+</body>
+</html>
